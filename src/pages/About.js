@@ -3,10 +3,11 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import ProfilePic from "../../public/images/profile/developer-pic-2.jpg";
+import ProfilePic from "../../public/images/profile/11-removebg-preview.png";
 import AnimatedNumber from "@/components/AnimatedNumber";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 const About = () => {
   return (
@@ -50,7 +51,7 @@ const About = () => {
             bg-light p-8"
             >
               <div className="absolute bg-dark top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem]" />
-              <Image src={ProfilePic} className="w-full h-auto rounded-2xl" />
+              <Image src={ProfilePic} className="w-full h-auto rounded-2xl bg-dark" />
             </div>
             <div className="flex flex-col col-span-2 justify-between items-end">
               <div className="flex flex-col items-end justify-center">
@@ -81,6 +82,7 @@ const About = () => {
           </div>
           <Skills />
           <Experience />
+          <Education/>
         </Layout>
       </main>
     </>
